@@ -70,10 +70,6 @@ def extraer_clima_izta():
                 datos_horarios.get("shortwave_radiation")
         })
 
-        # ==========================
-        # VARIABLES DERIVADAS
-        # ==========================
-
         df["año"] = df["fecha_hora"].dt.year
         df["mes"] = df["fecha_hora"].dt.month
         df["dia"] = df["fecha_hora"].dt.day
