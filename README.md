@@ -8,8 +8,8 @@
 | **Dataset** | Mediciones históricas horarias (1980-2025) de variables meteorológicas en El Pecho (5,230 msnm) — pública, ~400,000 registros. |
 | **Fuente** | [Archive API Open-Meteo](https://open-meteo.com/en/docs/historical-weather-api) (Modelo de Reanálisis ERA5). |
 | **Modelo** | Estrella con 1 fact table (clima horario) y 2 dimensiones (tiempo y ubicación). |
-| **Infraestructura** | Data Lake Serverless: AWS S3 + AWS Athena. |
-| **ETL** | Pipeline en Python (Pandas) para extracción y limpieza; carga directa a S3. |
+| **Infraestructura** | Base de Datos Relacional: AWS Aurora PostgreSQL. |
+| **ETL** | Pipeline en Python (`04_carga_y_orquestacion.ipynb`) con Pandas y SQLAlchemy para inyección de datos. |
 | **SQL avanzado** | Window functions (`ROW_NUMBER`, `LAG`, `LEAD`) y CTEs para cálculo del problema "Gaps and Islands" (rachas de horas bajo cero). |
 
 ## :dart: Problema y motivación
@@ -22,7 +22,7 @@ Este proyecto responde:
 
 ## :package: Arquitectura y Flujo de Datos
 
-Se optó por una arquitectura **Serverless Data Lake** para optimizar costos y velocidad de consulta sobre series de tiempo masivas, separando el almacenamiento del cómputo.
+Se optó por una arquitectura de Data Warehouse centralizado en AWS Aurora, realizando la transformación pesada en memoria (Pandas) antes de la inyección a la base de datos para asegurar la integridad referencial y optimizar las consultas analíticas. 
 
 ```text
         ┌──────────────────────────────────────┐
@@ -34,25 +34,20 @@ Se optó por una arquitectura **Serverless Data Lake** para optimizar costos y v
         ┌──────────────────────────────────────┐
         │  ETL Python — Jupyter Notebooks      │
         │  • Extract: requests.get()           │
-        │  • Clean: Imputación de nulos (Pandas)│
+        │  • Clean: Imputación de nulos        │
         │  • Transform: Modelado Estrella      │
+        │  • Load: SQLAlchemy to_sql()         │
         └──────────────────┬───────────────────┘
-                           │  Archivos CSV
+                           │  INSERT (Batch)
                            ▼
         ┌──────────────────────────────────────┐
-        │  AWS S3 (Capa Oro / Almacenamiento)  │
-        │  • /dim_tiempo/dim_tiempo.csv        │
-        │  • /dim_ubicacion/dim_ubicacion.csv  │
-        │  • /fact_clima/fact_clima.csv        │
+        │  AWS Aurora PostgreSQL               │
+        │  Schema: clima_izta_dwh              │
+        │  • dim_tiempo                        │
+        │  • dim_ubicacion                     │
+        │  • fact_clima                        │
         └──────────────────┬───────────────────┘
-                           │  CREATE EXTERNAL TABLE
-                           ▼
-        ┌──────────────────────────────────────┐
-        │  AWS Athena (Motor de Cómputo)       │
-        │  Consultas distribuidas usando       │
-        │  Presto/Trino SQL.                   │
-        └──────────────────┬───────────────────┘
-                           │  JDBC / ODBC
+                           │  SELECT
                            ▼
         ┌──────────────────────────────────────┐
         │  DBeaver (Cliente Analítico)         │
