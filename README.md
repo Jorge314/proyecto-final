@@ -61,3 +61,11 @@ Tras ejecutar el análisis de *Gaps and Islands* sobre los más de 400,000 regis
 1. **El récord histórico (2010):** La racha más larga ocurrió del 2 al 17 de enero de 2010, sumando **359 horas consecutivas** bajo cero con una temperatura promedio de -7.28°C.
 2. **Resiliencia reciente (2022):** Contrario a la hipótesis de que las grandes heladas son cosa del pasado, la segunda racha más larga ocurrió recientemente (9 al 23 de enero de 2022) con **334 horas**, aunque con una temperatura promedio ligeramente más cálida (-6.32°C).
 3. **Estacionalidad estricta:** El Top 3 histórico (incluyendo la tercera racha en 1992 de 333 horas) se concentra exclusivamente en el mes de **Enero**. Esto demuestra que, a pesar de las anomalías climáticas, enero sigue siendo el ancla de consolidación del glaciar.
+
+### 2. Aceleración de la Fractura Glaciar (Gelifracción)
+Para evaluar la pérdida de estabilidad térmica, se analizó la frecuencia de cruces de la barrera de los 0°C (ciclos de hielo-deshielo que fracturan la roca y el hielo). 
+
+Los datos revelan una aceleración crítica en el estrés mecánico sobre el terreno:
+* **Concentración de anomalías:** La distribución de los datos muestra un sesgo severo hacia la actualidad. Los años 2024 (766 ciclos), 2025 (750 ciclos) y 2023 (740 ciclos) ocupan tres de los primeros cinco lugares con mayor cantidad de choques térmicos desde 1980.
+* **El pico histórico:** El año 2024 registró el máximo histórico, lo que equivale a un promedio de más de dos cruces de congelación/descongelación diarios. 
+* **Impacto geomorfológico:** Este incremento exponencial en la varianza térmica reciente indica que el proceso de crioclastia está en su punto más agresivo, acelerando la degradación física de la zona por encima de los 5,200 msnm.
