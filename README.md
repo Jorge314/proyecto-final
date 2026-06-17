@@ -53,3 +53,11 @@ Se optó por una arquitectura de Data Warehouse centralizado en AWS Aurora, real
         │  DBeaver (Cliente Analítico)         │
         │  Ejecución de queries avanzadas (CTE)│
         └──────────────────────────────────────┘
+
+## :mag: Hallazgos principales
+
+Tras ejecutar el análisis de *Gaps and Islands* sobre los más de 400,000 registros horarios, se identificaron las ventanas históricas más largas de congelación ininterrumpida (temperatura <= 0°C) en El Pecho (5,230 msnm):
+
+1. **El récord histórico (2010):** La racha más larga ocurrió del 2 al 17 de enero de 2010, sumando **359 horas consecutivas** bajo cero con una temperatura promedio de -7.28°C.
+2. **Resiliencia reciente (2022):** Contrario a la hipótesis de que las grandes heladas son cosa del pasado, la segunda racha más larga ocurrió recientemente (9 al 23 de enero de 2022) con **334 horas**, aunque con una temperatura promedio ligeramente más cálida (-6.32°C).
+3. **Estacionalidad estricta:** El Top 3 histórico (incluyendo la tercera racha en 1992 de 333 horas) se concentra exclusivamente en el mes de **Enero**. Esto demuestra que, a pesar de las anomalías climáticas, enero sigue siendo el ancla de consolidación del glaciar.
