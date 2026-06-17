@@ -69,3 +69,9 @@ Los datos revelan una aceleración crítica en el estrés mecánico sobre el ter
 * **Concentración de anomalías:** La distribución de los datos muestra un sesgo severo hacia la actualidad. Los años 2024 (766 ciclos), 2025 (750 ciclos) y 2023 (740 ciclos) ocupan tres de los primeros cinco lugares con mayor cantidad de choques térmicos desde 1980.
 * **El pico histórico:** El año 2024 registró el máximo histórico, lo que equivale a un promedio de más de dos cruces de congelación/descongelación diarios. 
 * **Impacto geomorfológico:** Este incremento exponencial en la varianza térmica reciente indica que el proceso de crioclastia está en su punto más agresivo, acelerando la degradación física de la zona por encima de los 5,200 msnm.
+
+### 4. El Enemigo Silencioso: Aceleración de la Sublimación (Desierto de Altura)
+Para evaluar el estrés atmosférico sobre el glaciar en su temporada más vulnerable (verano), se calcularon los promedios móviles de 24 horas de radiación solar y humedad relativa. Los resultados muestran la creación de un "desierto de altura":
+* **Desplome histórico de humedad:** Los veranos de 2023 y 2024 registraron los niveles de sequedad extrema más severos de los últimos 45 años, cayendo a 21.46% y 22.67% respectivamente, destruyendo el promedio histórico que solía oscilar entre el 45% y 55%.
+* **Máxima energía retenida:** Estos mínimos históricos de humedad coincidieron con picos de radiación solar sostenida superiores a los 361 W/m².
+* **Impacto físico (Sublimación):** Esta combinación anómala acelera drásticamente la sublimación del glaciar. La transición directa de hielo a vapor de agua debilita la cohesión de la capa de acumulación, generando superficies de nieve suelta ("azucarada") y formaciones irregulares que comprometen severamente el avance técnico en la ruta.
