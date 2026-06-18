@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-from IPython.display import display
 
 pd.set_option('display.max_columns', None)
 
@@ -14,7 +13,7 @@ print(f"Total de columnas cargadas: {df.shape[1]}")
 #Perfilado
 df.info()
 
-display(df.describe())
+print(df.describe())
 
 #Casteo
 df_clean = df.copy()
