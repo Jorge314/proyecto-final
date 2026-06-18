@@ -1,16 +1,20 @@
-# Proyecto Final — Análisis Climático del Iztaccíhuatl: Evolución de la Ventana de Congelación (1980-2025)
+# Proyecto Final — Evolución de las Condiciones Climáticas Asociadas al Retroceso Glaciar en el Iztaccíhuatl (1980–2025)
 
-## :clipboard: Resumen ejecutivo
+## 📋 Resumen Ejecutivo
 
-| Campo | Valor |
-|---|---|
-| **Pregunta analítica** | ¿Cómo ha evolucionado la "ventana de congelación" (horas consecutivas bajo 0°C) y la frecuencia de anomalías térmicas en El Pecho del Iztaccíhuatl durante los últimos 45 años? |
-| **Dataset** | Mediciones históricas horarias (1980-2025) de variables meteorológicas en El Pecho (5,230 msnm) — pública, ~400,000 registros. |
-| **Fuente** | [Archive API Open-Meteo](https://open-meteo.com/en/docs/historical-weather-api) (Modelo de Reanálisis ERA5). |
-| **Modelo** | Estrella con 1 fact table (clima horario) y 2 dimensiones (tiempo y ubicación). |
-| **Infraestructura** | Base de Datos Relacional: AWS Aurora PostgreSQL. |
-| **ETL** | Pipeline en Python (`04_carga_y_orquestacion.ipynb`) con Pandas y SQLAlchemy para inyección de datos. |
-| **SQL avanzado** | Window functions (`ROW_NUMBER`, `LAG`, `LEAD`, `ROWS BETWEEN`) y CTEs para cálculo del problema "Gaps and Islands" y promedios móviles. |
+| Campo                         | Valor                                                                                                                                                                                                                                                                        |
+| ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Pregunta de investigación** | ¿Cómo han evolucionado las condiciones climáticas asociadas a la conservación glaciar en El Pecho del Iztaccíhuatl durante los últimos 45 años?                                                                                                                              |
+| **Hipótesis**                 | Si las condiciones favorables para la permanencia del hielo han disminuido, entonces deberían observarse cambios en la duración de las ventanas de congelación, una mayor frecuencia de ciclos hielo-deshielo y condiciones atmosféricas más favorables para la sublimación. |
+| **Dataset**                   | Registros meteorológicos horarios (1980–2025), aproximadamente 400,000 observaciones.                                                                                                                                                                                        |
+| **Ubicación**                 | El Pecho del Iztaccíhuatl (5,230 msnm).                                                                                                                                                                                                                                      |
+| **Fuente**                    | Open-Meteo Archive API (ERA5 Reanalysis).                                                                                                                                                                                                                                    |
+| **Infraestructura**           | AWS Aurora PostgreSQL.                                                                                                                                                                                                                                                       |
+| **Procesamiento**             | Python, Pandas, SQLAlchemy.                                                                                                                                                                                                                                                  |
+| **Análisis**                  | SQL avanzado mediante CTEs, Window Functions y técnicas de Gaps and Islands.                                                                                                                                                                                                 |
+
+---
+
 
 ## :dart: Problema y motivación
 
@@ -80,3 +84,9 @@ Para evaluar el estrés atmosférico en su temporada más vulnerable (verano), s
 * **Desplome histórico de humedad:** Los veranos de 2023 y 2024 registraron los niveles de sequedad extrema más severos registrados, cayendo a 21.46% y 22.67% respectivamente, destruyendo el promedio histórico (45%-55%).
 * **Máxima energía retenida:** Estos mínimos históricos coincidieron con picos de radiación solar sostenida superiores a los 361 W/m².
 * **Impacto físico:** Esta combinación acelera drásticamente la sublimación del hielo. La transición directa a vapor debilita la cohesión de la capa de acumulación, generando superficies de nieve suelta ("azucarada") que comprometen severamente el avance técnico en la ruta.
+
+
+
+
+
+
