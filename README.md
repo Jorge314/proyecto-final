@@ -156,21 +156,25 @@ En conjunto, la evidencia indica que la alimentación por nieve permanece presen
 
 ## 4. Condiciones Atmosféricas Favorables para la Sublimación
 
-La sublimación representa una forma importante de pérdida de masa glaciar en ambientes de alta montaña, especialmente bajo condiciones de baja humedad y elevada radiación solar.
+La sublimación constituye un mecanismo importante de pérdida de nieve y hielo en ambientes de alta montaña. Para identificar condiciones potencialmente favorables para este proceso, se analizaron promedios móviles de 24 horas de radiación solar y humedad relativa durante la temporada de verano.
 
-Para evaluar este fenómeno se analizaron promedios móviles de radiación y humedad relativa durante la temporada cálida.
+A diferencia de los valores horarios instantáneos, los promedios móviles permiten identificar periodos prolongados de estrés atmosférico asociados a una mayor disponibilidad energética y una menor humedad ambiental.
 
 ### Resultados relevantes
 
-* Los veranos de 2023 y 2024 registraron mínimos históricos de humedad relativa con valores de **21.46%** y **22.67%**.
-* Estos episodios coincidieron con periodos de radiación solar sostenida superiores a **361 W/m²**.
-* Ambos años presentan desviaciones importantes respecto al rango histórico observado entre 45% y 55%.
+* Los veranos de **2023** y **2024** registraron los niveles de humedad relativa sostenida más bajos de toda la serie histórica, alcanzando mínimos de **21.46%** y **22.67%**, respectivamente.
+* Estos dos años representan los valores más extremos observados desde 1980.
+* Ambos episodios coincidieron con niveles elevados de radiación solar sostenida, superiores a **361 W/m²**.
+* Los máximos de radiación observados en años recientes se encuentran entre los más altos de toda la serie, aunque sin mostrar una tendencia creciente clara a largo plazo.
 
 ### Interpretación
 
-Las condiciones observadas son consistentes con una atmósfera más seca y energéticamente más activa, favoreciendo procesos de sublimación y pérdida de masa de nieve y hielo.
+Los resultados muestran que los años recientes han experimentado episodios excepcionalmente secos durante la temporada cálida, combinados con una elevada disponibilidad de energía solar.
 
----
+Esta combinación de baja humedad relativa y alta radiación constituye un entorno atmosférico potencialmente favorable para procesos de sublimación y pérdida de nieve superficial.
+
+Aunque el análisis no permite cuantificar directamente la sublimación ni el balance de masa glaciar, la ocurrencia simultánea de mínimos históricos de humedad y elevados niveles de radiación sugiere condiciones ambientales cada vez más propicias para la remoción de nieve y hielo mediante procesos atmosféricos.
+
 
 ## ⚠️ Limitaciones
 
