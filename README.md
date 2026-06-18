@@ -93,57 +93,66 @@ El análisis se realizó principalmente mediante CTEs y Window Functions para id
 
 ## 1. Evolución de la Ventana de Congelación
 
-Las ventanas prolongadas bajo 0°C representan periodos potencialmente favorables para la conservación y consolidación de nieve y hielo.
+Las ventanas prolongadas bajo 0°C representan periodos potencialmente favorables para la conservación de nieve acumulada y la permanencia temporal de superficies congeladas en ambientes de alta montaña.
 
-El análisis mediante la técnica de Gaps and Islands permitió identificar las secuencias históricas más largas de congelación continua.
+Mediante la técnica de *Gaps and Islands* se identificaron las secuencias históricas más largas de congelación continua dentro de los más de 400,000 registros horarios analizados.
 
 ### Resultados relevantes
 
-* La racha más extensa ocurrió entre el 2 y el 17 de enero de 2010, con **359 horas consecutivas bajo cero** y una temperatura promedio de **−7.28°C**.
-* La segunda racha más larga se registró recientemente, entre el 9 y el 23 de enero de 2022, acumulando **334 horas continuas**.
-* Las principales ventanas de congelación se concentran en enero, evidenciando una marcada estacionalidad del proceso.
+* La racha más extensa ocurrió entre el 2 y el 17 de enero de 2010, acumulando **359 horas consecutivas bajo 0°C** con una temperatura promedio de **−7.28°C**.
+* La segunda racha más larga se registró recientemente, entre el 9 y el 23 de enero de 2022, alcanzando **334 horas continuas de congelación**.
+* Cuatro de las diez ventanas de congelación más largas de toda la serie histórica ocurrieron durante la década de 2020.
+* La totalidad de los eventos del Top 10 se concentró entre diciembre, enero y febrero, evidenciando una marcada estacionalidad invernal.
 
 ### Interpretación
 
-Aunque las condiciones climáticas han cambiado significativamente durante las últimas décadas, continúan ocurriendo episodios de congelación prolongada. Sin embargo, estos eventos parecen cada vez más aislados dentro de un entorno caracterizado por una mayor variabilidad térmica.
+Los resultados muestran que la capacidad del sistema atmosférico para generar episodios prolongados de congelación no ha desaparecido durante las últimas décadas. De hecho, varios de los eventos más extensos registrados desde 1980 ocurrieron recientemente, particularmente entre 2022 y 2023.
 
----
+Sin embargo, algunas de estas rachas recientes presentan temperaturas promedio menos extremas que las observadas en eventos históricos de las décadas de 1980 y 1990. Esto sugiere que, aunque continúan ocurriendo periodos prolongados de congelación, el contexto térmico en el que se desarrollan podría estar experimentando modificaciones.
+
+En conjunto, la evidencia indica que los episodios de congelación prolongada siguen formando parte del régimen climático de alta montaña del Iztaccíhuatl, aunque su relación con otros factores climáticos deberá evaluarse junto con indicadores de estabilidad térmica, precipitación sólida y sublimación.
+
 
 ## 2. Incremento de los Ciclos Hielo-Deshielo
 
-Para evaluar cambios en la estabilidad térmica se contabilizaron las transiciones a través de la barrera de 0°C.
+Para evaluar la estabilidad térmica del entorno glaciar se contabilizaron los cruces anuales de la barrera de congelación (0°C), definidos como transiciones entre estados de congelación y descongelación detectadas mediante funciones de ventana SQL.
 
-Estos ciclos favorecen procesos de meteorización física, fragmentación de roca y degradación de superficies glaciares expuestas.
+Estos ciclos representan episodios de variación térmica que pueden favorecer procesos de meteorización física, fragmentación de roca y degradación de superficies congeladas en ambientes de alta montaña.
 
 ### Resultados relevantes
 
-* 2024 registró el máximo histórico con **766 ciclos**.
-* 2025 y 2023 ocuparon el segundo y tercer lugar con **750** y **740 ciclos**, respectivamente.
-* Los máximos históricos se concentran en los años más recientes de la serie.
+* El máximo histórico se registró en 2024 con **766 cruces de la barrera de congelación**.
+* Los años 2025 y 2023 ocuparon el segundo y cuarto lugar con **750** y **740 cruces**, respectivamente.
+* El promedio anual de cruces aumentó de **690.4 eventos por año durante la década de 1980** a **731 eventos por año en la década de 2020**.
+* La década de 2020 presentó además la mayor variabilidad interanual de toda la serie histórica, con una desviación estándar de **29.79**, superando ampliamente los valores observados en décadas anteriores.
 
 ### Interpretación
 
-Los resultados sugieren una disminución progresiva de la estabilidad térmica en la alta montaña. La creciente frecuencia de ciclos hielo-deshielo indica condiciones más variables y potencialmente más agresivas para la conservación de hielo permanente.
+Los resultados muestran una tendencia ascendente en la frecuencia de ciclos hielo-deshielo durante los últimos 45 años. Aunque las diferencias entre décadas son graduales, la década de 2020 concentra tanto los máximos históricos como el promedio más elevado de toda la serie.
 
----
+Asimismo, el incremento en la variabilidad interanual sugiere un sistema térmico menos estable y más propenso a alternar entre condiciones de congelación y descongelación.
+
+En conjunto, la evidencia es consistente con un aumento progresivo de la inestabilidad térmica en la alta montaña del Iztaccíhuatl, una condición potencialmente favorable para procesos de meteorización física y degradación de superficies expuestas.
 
 ## 3. Cambios en la Alimentación por Precipitación Sólida
 
-La acumulación de nieve constituye uno de los principales mecanismos de alimentación glaciar.
-
-Se analizaron los eventos de precipitación sólida más intensos registrados durante cada década.
+La precipitación sólida constituye uno de los principales mecanismos de aporte de nieve en la zona glaciar. Para evaluar su comportamiento se identificaron los días con mayor acumulación de nieve registrada en cada década de la serie histórica.
 
 ### Resultados relevantes
 
-* El 17 de febrero de 2024 se registró el evento más intenso de toda la serie histórica con **12.04 mm equivalentes de nieve en 24 horas**.
-* Durante las décadas de 1990 y 2000 se observó una notable ausencia de eventos extremos comparables.
-* La magnitud de los eventos recientes supera ampliamente los máximos observados en décadas anteriores.
+* El evento de nevada más intenso de toda la serie ocurrió el **17 de febrero de 2024**, acumulando **12.04 unidades de nieve registradas en 24 horas**.
+* El segundo evento más significativo correspondió al **13 de marzo de 1983**, con **6.51 unidades**, aproximadamente la mitad del máximo observado en 2024.
+* La década de 2020 concentra los eventos de precipitación sólida más intensos de todo el periodo analizado.
+* Los máximos observados presentan una elevada variabilidad entre décadas, evidenciando un comportamiento no uniforme de los eventos extremos de nieve.
 
 ### Interpretación
 
-La acumulación parece depender cada vez más de eventos aislados de gran intensidad en lugar de aportes frecuentes y sostenidos. Este comportamiento sugiere una mayor irregularidad en los mecanismos de alimentación glaciar.
+Los resultados sugieren que los episodios de precipitación sólida continúan ocurriendo en la alta montaña del Iztaccíhuatl y que, en años recientes, pueden alcanzar magnitudes superiores a las registradas en gran parte de la serie histórica.
 
----
+Más que mostrar una tendencia lineal de aumento o disminución, la distribución observada refleja una elevada variabilidad temporal, donde décadas con escasa actividad son seguidas por eventos extremos de gran intensidad.
+
+En conjunto, la evidencia indica que la alimentación por nieve permanece presente dentro del sistema climático de alta montaña, aunque con una distribución temporal irregular y dominada por eventos puntuales de gran magnitud.
+
 
 ## 4. Condiciones Atmosféricas Favorables para la Sublimación
 
