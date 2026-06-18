@@ -1,8 +1,5 @@
 SET search_path TO clima_izta_dwh;
 
--- PREGUNTA 1: ¿Cuáles han sido las rachas más largas de horas bajo cero?
-
-
 WITH rachas_clima AS (
     SELECT 
         t.fecha_hora,
