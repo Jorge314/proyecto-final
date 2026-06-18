@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from IPython.display import display
+
 pd.set_option('display.max_columns', None)
 
 #Lectura de datos
@@ -22,7 +22,7 @@ datos_ubicacion = {
 
 dim_ubicacion = pd.DataFrame(datos_ubicacion)
 
-display(dim_ubicacion)
+print(dim_ubicacion)
 
 #Se contruye la tabla dim_tiempo
 dim_tiempo = df_clean[["fecha_hora"]].copy()
@@ -52,7 +52,7 @@ cols_tiempo = ["id_tiempo", "fecha_hora", "fecha", "hora", "dia", "mes", "anio",
 dim_tiempo = dim_tiempo[cols_tiempo]
 
 print(f"Dimensión de tiempo creada con {len(dim_tiempo):,} registros.")
-display(dim_tiempo.head(3))
+print(dim_tiempo.head(3))
 
 #Se construye la tabla de hechos
 fact_clima = df_clean.copy()
@@ -80,7 +80,7 @@ cols_hechos = [
 fact_clima = fact_clima[cols_hechos]
 
 print(f"Tabla de hechos creada con {len(fact_clima):,} registros.")
-display(fact_clima.head(3))
+print(fact_clima.head(3))
 
 #Se guarda el modelo
 
