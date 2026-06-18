@@ -14,7 +14,7 @@ print(f"Total de columnas cargadas: {df.shape[1]}")
 #Perfilado
 df.info()
 
-display(df.describe())
+print(df.describe())
 
 #Casteo
 df_clean = df.copy()
