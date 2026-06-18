@@ -18,17 +18,21 @@
 
 ## :dart: Problema y motivación
 
-La alta montaña mexicana está sufriendo un cambio geomorfológico acelerado. Entender con datos duros a nivel horario cómo la temperatura, la precipitación y la radiación solar han impactado la zona de los glaciares no solo es un ejercicio estadístico, sino una herramienta de planeación vital para el montañismo técnico y la evaluación de riesgos en ruta. 
+El Iztaccíhuatl alberga algunos de los últimos remanentes glaciares de México. Durante las últimas décadas, diversos estudios han documentado un retroceso acelerado de estas masas de hielo, asociado a cambios en la temperatura, los patrones de precipitación y las condiciones atmosféricas de alta montaña.
 
-Este proyecto responde a cuatro interrogantes clave:
-1. **Consolidación:** ¿Cuál ha sido la racha más larga de horas consecutivas bajo 0°C y cómo se ha comportado esta ventana en la década actual?
-2. **Gelifracción:** ¿Se está acelerando la pérdida de estabilidad térmica y la fractura de la roca por ciclos de hielo-deshielo?
-3. **Alimentación:** ¿Cuál ha sido la evolución decadal en la magnitud de los eventos extremos de precipitación sólida (súper nevadas)?
-4. **Sublimación:** ¿Cuál es la tendencia histórica de los picos de radiación solar y humedad relativa, y cómo fomentan la creación de un "desierto de altura"?
+Comprender la evolución de estas variables resulta relevante no sólo desde una perspectiva climática, sino también para la evaluación de riesgos geomorfológicos, la conservación de ecosistemas de alta montaña y la práctica del montañismo técnico.
+
+Este proyecto utiliza registros meteorológicos horarios para analizar cuatro procesos climáticos estrechamente relacionados con la estabilidad glaciar:
+
+1. **Consolidación:** duración de las ventanas continuas de congelación.
+2. **Estabilidad térmica:** frecuencia de ciclos hielo-deshielo.
+3. **Alimentación glaciar:** intensidad de eventos extremos de precipitación sólida.
+4. **Ablación atmosférica:** condiciones favorables para sublimación.
+
 
 ## :package: Arquitectura y Flujo de Datos
 
-Se optó por una arquitectura de Data Warehouse centralizado en AWS Aurora, realizando la transformación pesada en memoria (Pandas) antes de la inyección a la base de datos para asegurar la integridad referencial y optimizar las consultas analíticas. 
+Se implementó una arquitectura de Data Warehouse basada en un modelo dimensional tipo estrella.
 
     ┌──────────────────────────────────────┐
     │  Open-Meteo Archive API              │
@@ -58,6 +62,32 @@ Se optó por una arquitectura de Data Warehouse centralizado en AWS Aurora, real
     │  DBeaver (Cliente Analítico)         │
     │  Ejecución de queries avanzadas (CTE)│
     └──────────────────────────────────────┘
+
+### Modelo Dimensional
+
+* **fact_clima**
+
+  * temperatura
+  * precipitación sólida
+  * humedad relativa
+  * radiación solar
+  * variables atmosféricas horarias
+
+* **dim_tiempo**
+
+  * fecha
+  * año
+  * mes
+  * estación
+
+* **dim_ubicacion**
+
+  * coordenadas
+  * altitud
+
+El análisis se realizó principalmente mediante CTEs y Window Functions para identificar patrones temporales complejos sobre más de cuatro décadas de observaciones.
+
+---
 
 ## :mag: Hallazgos principales
 
