@@ -4,10 +4,10 @@ WITH radiacion_continua AS (
     SELECT 
         t.fecha_hora,
         t.anio,
-        t.estacion, -- Nos traemos la estación desde aquí
+        t.estacion, 
         f.radiacion_solar,
         f.humedad_relativa,
-        -- El promedio móvil ahora mira el pasado real (mayo alimenta a junio)
+        -- El promedio móvil 
         AVG(f.radiacion_solar) OVER (
             ORDER BY t.fecha_hora 
             ROWS BETWEEN 23 PRECEDING AND CURRENT ROW
@@ -25,7 +25,7 @@ picos_verano AS (
         ROUND(MAX(radiacion_movil_24h), 2) as pico_radiacion_sostenida,
         ROUND(MIN(humedad_movil_24h), 2) as sequedad_extrema
     FROM radiacion_continua
-    WHERE estacion = 'Verano' -- El filtro se aplica AQUÍ, con las métricas ya calculadas limpiamente
+    WHERE estacion = 'Verano' 
     GROUP BY anio
 )
 SELECT * FROM picos_verano
