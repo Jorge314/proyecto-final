@@ -188,14 +188,28 @@ Asimismo, el estudio identifica asociaciones climáticas compatibles con proceso
 
 ## 📌 Conclusiones
 
-El análisis de 45 años de registros meteorológicos horarios muestra una transformación significativa en las condiciones climáticas de la alta montaña del Iztaccíhuatl.
+El análisis de más de **400,000 registros meteorológicos horarios** correspondientes al periodo **1980–2025** permitió identificar cambios relevantes en las condiciones climáticas de la alta montaña del Iztaccíhuatl.
 
-Aunque continúan registrándose eventos excepcionales de congelación y precipitación sólida, estos coexisten con máximos históricos en la frecuencia de ciclos hielo-deshielo, mínimos históricos de humedad relativa y condiciones favorables para la sublimación.
+Los resultados muestran que las grandes ventanas de congelación continúan ocurriendo en la actualidad; sin embargo, coexisten con una mayor frecuencia de ciclos hielo-deshielo y con una variabilidad térmica superior a la observada en décadas anteriores. La década de 2020 registró el promedio anual más alto de transiciones a través del punto de congelación, así como la mayor variabilidad interanual de toda la serie.
 
-En conjunto, la evidencia sugiere un entorno climático progresivamente más variable y potencialmente menos favorable para la permanencia de masas de hielo permanentes, un patrón consistente con el retroceso glaciar documentado en la alta montaña mexicana durante las últimas décadas.
+Asimismo, los años recientes concentraron algunos de los eventos más intensos de precipitación sólida y los niveles más bajos de humedad relativa registrados durante el verano. La combinación de sequedad extrema y elevada radiación solar sostenida sugiere condiciones atmosféricas potencialmente favorables para procesos de sublimación y pérdida de nieve superficial.
 
-Más allá de los hallazgos climáticos, este proyecto demuestra la aplicación de técnicas de ingeniería de datos, modelado dimensional y análisis SQL avanzado para transformar grandes volúmenes de datos meteorológicos en información útil para la comprensión de procesos ambientales complejos.
+En conjunto, la evidencia apunta a un sistema climático de alta montaña cada vez más variable, donde episodios prolongados de congelación siguen ocurriendo, pero conviven con señales de inestabilidad térmica y estrés atmosférico que podrían dificultar la permanencia de nieve y hielo a largo plazo.
 
+---
+
+## 🛠️ Aprendizajes Técnicos
+
+Durante el desarrollo del proyecto se aplicaron conceptos y herramientas de:
+
+- **Modelado dimensional** mediante un esquema estrella.
+- **Procesos ETL** desarrollados en Python con Pandas y SQLAlchemy.
+- **Diseño e implementación de un Data Warehouse** en PostgreSQL sobre AWS Aurora.
+- **Consultas analíticas avanzadas** utilizando CTEs y Window Functions.
+- **Análisis temporal** mediante técnicas de *Gaps and Islands*, `LAG()`, `RANK()` y promedios móviles.
+- **Transformación de datos meteorológicos históricos** en indicadores climáticos interpretables.
+
+Este proyecto demuestra cómo las herramientas de **Ingeniería de Datos**, **Business Intelligence** y **SQL Avanzado** pueden emplearse para transformar grandes volúmenes de datos ambientales en información útil para la comprensión de fenómenos climáticos complejos.
 
 
 
