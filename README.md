@@ -89,31 +89,100 @@ El análisis se realizó principalmente mediante CTEs y Window Functions para id
 
 ---
 
-## :mag: Hallazgos principales
+# 🔍 Hallazgos Principales
 
-### 1. Evolución de la Ventana de Congelación
-Tras ejecutar el análisis de *Gaps and Islands* sobre los más de 400,000 registros horarios, se identificaron las ventanas históricas más largas de congelación ininterrumpida (temperatura <= 0°C):
-* **El récord histórico (2010):** La racha más larga ocurrió del 2 al 17 de enero de 2010, sumando **359 horas consecutivas** bajo cero con una temperatura promedio de -7.28°C.
-* **Resiliencia reciente (2022):** Contrario a la hipótesis de que las grandes heladas son cosa del pasado, la segunda racha más larga ocurrió recientemente (9 al 23 de enero de 2022) con **334 horas**, aunque con una temperatura promedio ligeramente más cálida (-6.32°C).
-* **Estacionalidad estricta:** El Top 3 histórico se concentra exclusivamente en el mes de **Enero**, demostrando que sigue siendo el ancla de consolidación del glaciar.
+## 1. Evolución de la Ventana de Congelación
 
-### 2. Aceleración de la Fractura Glaciar (Gelifracción)
-Para evaluar la pérdida de estabilidad térmica, se analizó la frecuencia de cruces de la barrera de los 0°C (ciclos de hielo-deshielo que fracturan la roca y el hielo). Los datos revelan una aceleración crítica en el estrés mecánico sobre el terreno:
-* **Concentración de anomalías:** La distribución muestra un sesgo severo hacia la actualidad. Los años 2024 (766 ciclos), 2025 (750 ciclos) y 2023 (740 ciclos) ocupan tres de los primeros cinco lugares con mayor cantidad de choques térmicos desde 1980.
-* **El pico histórico:** El año 2024 registró el máximo histórico, lo que equivale a un promedio de más de dos cruces de congelación/descongelación diarios. 
-* **Impacto geomorfológico:** Este incremento exponencial indica que el proceso de crioclastia está en su punto más agresivo, acelerando la degradación física de la zona por encima de los 5,200 msnm.
+Las ventanas prolongadas bajo 0°C representan periodos potencialmente favorables para la conservación y consolidación de nieve y hielo.
 
-### 3. Volatilidad Extrema en Precipitación Sólida (Súper Nevadas)
-Al analizar las tormentas de nieve más intensas mediante rankings decadales, los datos revelaron un patrón de alta volatilidad y eventos atípicos:
-* **La Gran Anomalía de 2024:** El 17 de febrero de 2024 registró la nevada en 24 horas más masiva de los últimos 45 años (12.04 mm), superando por casi el doble al récord histórico de la década de 1980 (6.51 mm).
-* **El "Desierto Blanco":** Las décadas de 1990 y 2000 carecieron casi por completo de tormentas de nieve de gran magnitud, evidenciando periodos prolongados de sequía de acumulación.
-* **Impacto en el glaciar:** El régimen de alimentación ha mutado. Ahora depende de tormentas masivas, erráticas y violentas que, combinadas con fuertes vientos, generan acumulaciones desiguales y aumentan el riesgo de placas inestables.
+El análisis mediante la técnica de Gaps and Islands permitió identificar las secuencias históricas más largas de congelación continua.
 
-### 4. El Enemigo Silencioso: Aceleración de la Sublimación
-Para evaluar el estrés atmosférico en su temporada más vulnerable (verano), se calcularon los promedios móviles de 24 horas de radiación solar y humedad relativa, confirmando la creación de un "desierto de altura":
-* **Desplome histórico de humedad:** Los veranos de 2023 y 2024 registraron los niveles de sequedad extrema más severos registrados, cayendo a 21.46% y 22.67% respectivamente, destruyendo el promedio histórico (45%-55%).
-* **Máxima energía retenida:** Estos mínimos históricos coincidieron con picos de radiación solar sostenida superiores a los 361 W/m².
-* **Impacto físico:** Esta combinación acelera drásticamente la sublimación del hielo. La transición directa a vapor debilita la cohesión de la capa de acumulación, generando superficies de nieve suelta ("azucarada") que comprometen severamente el avance técnico en la ruta.
+### Resultados relevantes
+
+* La racha más extensa ocurrió entre el 2 y el 17 de enero de 2010, con **359 horas consecutivas bajo cero** y una temperatura promedio de **−7.28°C**.
+* La segunda racha más larga se registró recientemente, entre el 9 y el 23 de enero de 2022, acumulando **334 horas continuas**.
+* Las principales ventanas de congelación se concentran en enero, evidenciando una marcada estacionalidad del proceso.
+
+### Interpretación
+
+Aunque las condiciones climáticas han cambiado significativamente durante las últimas décadas, continúan ocurriendo episodios de congelación prolongada. Sin embargo, estos eventos parecen cada vez más aislados dentro de un entorno caracterizado por una mayor variabilidad térmica.
+
+---
+
+## 2. Incremento de los Ciclos Hielo-Deshielo
+
+Para evaluar cambios en la estabilidad térmica se contabilizaron las transiciones a través de la barrera de 0°C.
+
+Estos ciclos favorecen procesos de meteorización física, fragmentación de roca y degradación de superficies glaciares expuestas.
+
+### Resultados relevantes
+
+* 2024 registró el máximo histórico con **766 ciclos**.
+* 2025 y 2023 ocuparon el segundo y tercer lugar con **750** y **740 ciclos**, respectivamente.
+* Los máximos históricos se concentran en los años más recientes de la serie.
+
+### Interpretación
+
+Los resultados sugieren una disminución progresiva de la estabilidad térmica en la alta montaña. La creciente frecuencia de ciclos hielo-deshielo indica condiciones más variables y potencialmente más agresivas para la conservación de hielo permanente.
+
+---
+
+## 3. Cambios en la Alimentación por Precipitación Sólida
+
+La acumulación de nieve constituye uno de los principales mecanismos de alimentación glaciar.
+
+Se analizaron los eventos de precipitación sólida más intensos registrados durante cada década.
+
+### Resultados relevantes
+
+* El 17 de febrero de 2024 se registró el evento más intenso de toda la serie histórica con **12.04 mm equivalentes de nieve en 24 horas**.
+* Durante las décadas de 1990 y 2000 se observó una notable ausencia de eventos extremos comparables.
+* La magnitud de los eventos recientes supera ampliamente los máximos observados en décadas anteriores.
+
+### Interpretación
+
+La acumulación parece depender cada vez más de eventos aislados de gran intensidad en lugar de aportes frecuentes y sostenidos. Este comportamiento sugiere una mayor irregularidad en los mecanismos de alimentación glaciar.
+
+---
+
+## 4. Condiciones Atmosféricas Favorables para la Sublimación
+
+La sublimación representa una forma importante de pérdida de masa glaciar en ambientes de alta montaña, especialmente bajo condiciones de baja humedad y elevada radiación solar.
+
+Para evaluar este fenómeno se analizaron promedios móviles de radiación y humedad relativa durante la temporada cálida.
+
+### Resultados relevantes
+
+* Los veranos de 2023 y 2024 registraron mínimos históricos de humedad relativa con valores de **21.46%** y **22.67%**.
+* Estos episodios coincidieron con periodos de radiación solar sostenida superiores a **361 W/m²**.
+* Ambos años presentan desviaciones importantes respecto al rango histórico observado entre 45% y 55%.
+
+### Interpretación
+
+Las condiciones observadas son consistentes con una atmósfera más seca y energéticamente más activa, favoreciendo procesos de sublimación y pérdida de masa de nieve y hielo.
+
+---
+
+## ⚠️ Limitaciones
+
+Los datos utilizados provienen del modelo de reanálisis ERA5 y no de mediciones directas realizadas sobre la superficie glaciar.
+
+Por esta razón, los resultados deben interpretarse como una reconstrucción climática de alta resolución útil para identificar tendencias atmosféricas de largo plazo, pero no como una medición directa de la evolución física del glaciar.
+
+Asimismo, el estudio identifica asociaciones climáticas compatibles con procesos de degradación glaciar, sin establecer relaciones causales directas.
+
+---
+
+## 📌 Conclusiones
+
+El análisis de 45 años de registros meteorológicos horarios muestra una transformación significativa en las condiciones climáticas de la alta montaña del Iztaccíhuatl.
+
+Aunque continúan registrándose eventos excepcionales de congelación y precipitación sólida, estos coexisten con máximos históricos en la frecuencia de ciclos hielo-deshielo, mínimos históricos de humedad relativa y condiciones favorables para la sublimación.
+
+En conjunto, la evidencia sugiere un entorno climático progresivamente más variable y potencialmente menos favorable para la permanencia de masas de hielo permanentes, un patrón consistente con el retroceso glaciar documentado en la alta montaña mexicana durante las últimas décadas.
+
+Más allá de los hallazgos climáticos, este proyecto demuestra la aplicación de técnicas de ingeniería de datos, modelado dimensional y análisis SQL avanzado para transformar grandes volúmenes de datos meteorológicos en información útil para la comprensión de procesos ambientales complejos.
+
 
 
 
